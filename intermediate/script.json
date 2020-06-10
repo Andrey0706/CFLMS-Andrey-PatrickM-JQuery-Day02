@@ -1,0 +1,36 @@
+let simpsons =
+`[{
+	"name" : "Homer Simpsons",
+	"age" : "42",
+	"hometown" : "Springfield",
+	"relation" : "parent",
+	"image" : "Images/homer.jpg" 
+},
+{
+	"name" : "Marge Simpson",
+	"age" : "39",
+	"hometown" : "Springfield",
+	"relation" : "parent",
+	"image" : "Images/marge.jpg"
+},
+{
+	"name" : "Bart Simpson",
+	"age" : "10",
+	"hometown" : "Springfield",
+	"relation" : "child",
+	"image" : "Images/bart.jpg"
+},
+{
+	"name" : "Lisa Simpson",
+	"age" : "8",
+	"hometown" : "Springfield",
+	"relation" : "child",
+	"image" : "Images/lisa.jpg"
+},
+{
+	"name" : "Maggie Simpson",
+	"age" : "1",
+	"hometown" : "Springfield",
+	"relation" : "child",
+	"image" : "Images/maggie.jpg"
+}]`;
