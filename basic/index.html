@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic 1 and 2</title>
+
+	<script
+  src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+<style>
+#container {
+	display: flex;
+	flex-direction: column;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;	
+}
+
+.row div {
+		width: 300px;
+}
+
+img {
+	width: 100%;
+}
+</style>
+<body>
+
+
+<div id="container">
+	
+	<div class="row">
+		<div class ="santa"><img src="img/santa-claus.png" alt=""></div>
+		<div class ="santa"><img src="img/santa-claus.png" alt=""></div>
+		<div class ="santa"><img src="img/santa-claus.png" alt=""></div>
+		<div class ="santa"><img src="img/santa-claus.png" alt=""></div>
+	</div>
+	<div class="row">
+		<div class ="text"><img src="img/bell.png" alt="">
+			<p></p></div>
+		<div class ="text"><img src="img/bell.png" alt=""><p></p></div>
+		<div class ="text"><img src="img/bell.png" alt=""><p></p></div>
+		<div class ="text"><img src="img/bell.png" alt=""><p></p></div>
+	</div>
+	<div class="row">
+		<div><img src="img/box.webp" alt=""></div>
+		<div><img src="img/box.webp" alt=""></div>
+		<div><img src="img/box.webp" alt=""></div>
+		<div><img src="img/box.webp" alt=""></div>
+	</div>
+
+</div>
+<script>
+	$(document).ready(function(){
+		$(".santa").on("click", function(){
+			$(this).hide();
+		})
+
+		$(".text").on("click", function(){
+			$("p").text("You clicked on the Christmas bell now you own me a candy");
+		})
+
+
+
+	})
+	</script>
+</body>
+</html>
