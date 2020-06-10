@@ -4,33 +4,38 @@ let simpsons =
 	"age" : "42",
 	"hometown" : "Springfield",
 	"relation" : "parent",
-	"image" : "Images/homer.jpg" 
+	"image" : "Images/homer.jpg",
+	"hobbys" : "Dancing" 
 },
 {
 	"name" : "Marge Simpson",
 	"age" : "39",
 	"hometown" : "Springfield",
 	"relation" : "parent",
-	"image" : "Images/marge.jpg"
+	"image" : "Images/marge.jpg",
+	"hobbys" : "Soccer" 
 },
 {
 	"name" : "Bart Simpson",
 	"age" : "10",
 	"hometown" : "Springfield",
 	"relation" : "child",
-	"image" : "Images/bart.jpg"
+	"image" : "Images/bart.jpg",
+	"hobbys" : "Cooking" 
 },
 {
 	"name" : "Lisa Simpson",
 	"age" : "8",
 	"hometown" : "Springfield",
 	"relation" : "child",
-	"image" : "Images/lisa.jpg"
+	"image" : "Images/lisa.jpg",
+	"hobbys" : "Gamer" 
 },
 {
 	"name" : "Maggie Simpson",
 	"age" : "1",
 	"hometown" : "Springfield",
 	"relation" : "child",
-	"image" : "Images/maggie.jpg"
+	"image" : "Images/maggie.jpg",
+	"hobbys" : "Smoking" 
 }]`;

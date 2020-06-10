@@ -12,22 +12,24 @@ for(let i=0;i<members.length;i++){
 
 	if(i<2){
 		upperDiv.innerHTML += `
-	<div class="person" id="person${i}">
+	<div class="person" id="${i}">
 		<div class="name"><p>${members[i].name}</p></div>
 		<img src="${members[i].image}" alt="">
 		<div class="age"><p>${members[i].age}</p></div>
 		<div class="hometown"><p>${members[i].hometown}</p></div>
+		<div class="hobbys"></div>
 	</div>
 	`	
 	}
 
 	if(i>=2){
 		lowerDiv.innerHTML += `
-	<div class="person" id="person${i}">
+	<div class="person" id="${i}">
 		<div class="name"><p>${members[i].name}</p></div>
 		<img src="${members[i].image}" alt="">
 		<div class="age"><p>Age: ${members[i].age}</p></div>
 		<div class="hometown"><p>Hometown: ${members[i].hometown}</p></div>
+		<div class="hobbys"></div>
 	</div>
 	`	
 	}
@@ -68,11 +70,11 @@ for(let i=0;i<members.length;i++){
 	console.log(members[i].relation + "/n");
 
 	if(relation == members[i].relation){
-		$("#person" + i).addClass("green");
+		$("#" + i).addClass("green");
 		$(".green").css("background-color", "green");
 		
 	} else {
-		$("#person" + i).addClass("blue");
+		$("#" + i).addClass("blue");
 		$(".blue").css("background-color", "blue");
 		
 	}
@@ -88,4 +90,21 @@ function deleteClasses(){
 
 	}
 }
+
+	$(".person").on("click",function(){
+		var id = $(this).attr("id");
+		$(`#${id} div:last`).text(members[id].hobbys);
+		console.log(id);
+
+		var relation = members[id].relation;
+		for(let i=0;i<members.length;i++){
+			console.log(relation);
+			console.log(members[i].relation + "/n");
+		
+			if(relation == members[i].relation){
+				$("#person"+i).hide();
+			}
+		}
+	})
 })
+
